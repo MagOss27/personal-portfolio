@@ -1,0 +1,131 @@
+/* Estilo do Portfólio */
+
+/* Define um estilo base para todos os elementos, removendo margens, preenchimentos e incluindo uma caixa de modelagem de borda. 
+   Também define a fonte padrão como 'Poppins' e 'sans-serif'. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo do corpo da página */
+
+/* Define a cor de fundo do corpo como preto e a altura como 100% da altura visível (viewport height). */
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+/* Estilo da interface do portfólio */
+
+/* Define uma largura máxima para a interface e centraliza-a na página. */
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Define o estilo do botão de contato, incluindo cor de fundo, borda, tamanho da fonte e cursor. */
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00FF08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* Estilo do cabeçalho do portfólio */
+
+/* Define um espaçamento interno para o cabeçalho. */
+header {
+    padding: 40px 4%;
+}
+
+/* Estilizações específicas dentro da interface do cabeçalho */
+
+/* Centraliza os elementos dentro do cabeçalho e alinha-os horizontalmente. */
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilo dos links no cabeçalho */
+
+/* Define a cor padrão e remove a decoração de texto dos links. */
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+/* Efeito de hover nos links */
+
+/* Muda a cor e aplica um efeito de escala quando o mouse passa por cima do link. */
+header a:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Estilo da lista de navegação no cabeçalho */
+
+/* Remove os pontos da lista e exibe os itens da lista em linha. */
+header nav ul {
+    list-style-type: none;
+}
+
+/* Estilo dos itens da lista de navegação */
+
+/* Exibe os itens da lista de navegação em linha e adiciona espaçamento. */
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* Estilo do botão de contato */
+
+/* Efeito de hover no botão de contato */
+
+/* Adiciona uma sombra ao botão quando o mouse passa por cima. */
+header .btn-contato button:hover {
+    box-shadow: 0px 0px 18px #00ff0868;
+}
+
+/*Estilo do Topo Portfólio*/
+
+section.topo-do-portifolio {
+    padding: 40px 4%;
+}
+
+section.topo-do-portifolio .flex {
+    align-items: center;
+    justify-content: center;
+}
+
+.topo-do-portifolio h1 {
+    color: #fff;
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.topo-do-portifolio h1 span {
+    color: #00FF08;
+}
+
+.topo-do-portifolio .txt-topo-portifolio p {
+    color: #fff;
+    margin: 40px 0;
+}
