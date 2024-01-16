@@ -2,7 +2,7 @@
 
 /* Define um estilo base para todos os elementos, removendo margens, preenchimentos e incluindo uma caixa de modelagem de borda. 
    Também define a fonte padrão como 'Poppins' e 'sans-serif'. */
-   * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -39,6 +39,16 @@ body {
     border-radius: 30px;
     cursor: pointer;
     transition: .2s;
+}
+
+h2.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #00FF08;
 }
 
 /* Estilo do cabeçalho do portfólio */
@@ -145,4 +155,36 @@ section.topo-do-portifolio .flex {
     100% {
         top: 30px;
     }
+}
+
+/* ESTILO DAS ESPECIALIDADES */
+section.especialidades {
+    padding: 40px 4%;
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+.especialidades .especialidades-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+.especialidades .especialidades-box i {
+    font-size: 70px;
+    color: #00FF08;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
 }
