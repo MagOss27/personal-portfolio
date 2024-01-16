@@ -2,7 +2,7 @@
 
 /* Define um estilo base para todos os elementos, removendo margens, preenchimentos e incluindo uma caixa de modelagem de borda. 
    Também define a fonte padrão como 'Poppins' e 'sans-serif'. */
-* {
+   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -38,6 +38,7 @@ body {
     border: 0;
     border-radius: 30px;
     cursor: pointer;
+    transition: .2s;
 }
 
 /* Estilo do cabeçalho do portfólio */
@@ -77,7 +78,7 @@ a {
 /* Muda a cor e aplica um efeito de escala quando o mouse passa por cima do link. */
 header a:hover {
     color: #fff;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* Estilo da lista de navegação no cabeçalho */
@@ -100,11 +101,12 @@ header nav ul li {
 /* Efeito de hover no botão de contato */
 
 /* Adiciona uma sombra ao botão quando o mouse passa por cima. */
-header .btn-contato button:hover {
+.btn-contato button:hover {
     box-shadow: 0px 0px 18px #00ff0868;
+    transform: scale(1.05);
 }
 
-/*Estilo do Topo Portfólio*/
+/* Estilo do Topo Portfólio*/
 
 section.topo-do-portifolio {
     padding: 40px 4%;
@@ -128,4 +130,19 @@ section.topo-do-portifolio .flex {
 .topo-do-portifolio .txt-topo-portifolio p {
     color: #fff;
     margin: 40px 0;
+}
+
+.topo-do-portifolio .img-topo-portifolio img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
 }
