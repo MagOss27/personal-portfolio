@@ -38,9 +38,19 @@ body {
     transition: .2s;
 }
 
+h2.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #00FF08;
+}
+
 /* Efeito de hover no botão de contato */
 /* Adiciona uma sombra ao botão quando o mouse passa por cima. */
-button:hover {
+button:hover, form .btn-enviar input:hover{
     box-shadow: 0px 0px 8px #00FF08;
     transform: scale(1.05);
 }
@@ -100,12 +110,13 @@ section.topo-do-portifolio {
 section.topo-do-portifolio .flex {
     align-items: center;
     justify-content: center;
+    gap: 90px;
 }
 
 /* Estilo para o título principal */
 .topo-do-portifolio h1 {
     color: #fff;
-    font-size: 38px;
+    font-size: 42px;
     line-height: 40px;
 }
 
@@ -275,4 +286,55 @@ section.portfolio .flex {
 /* Efeito de hover na sobreposição, alterando a opacidade para torná-la visível. */
 .overlay:hover {
     opacity: 1;
+}
+
+/* ESTILO DO FORMULÁRIO DE CONTATO*/
+section.formulario {
+    padding: 80px 4%;
+}
+
+/* Estilo para o formulário */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px; /* Adiciona margem superior ao formulário */
+}
+
+/* Estilo para os campos de input e textarea */
+form input,
+form textarea {
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px; /* Adiciona borda arredondada aos campos */
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Estilo específico para textarea, removendo redimensionamento vertical */
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+/* Estilo para o bloco de botão enviar */
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilo para o botão de envio */
+form .btn-enviar input {
+    width: 120px;
+    background-color: #00FF08;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s; /* Adiciona uma transição suave durante a mudança de estado */
 }
