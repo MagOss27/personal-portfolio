@@ -1,6 +1,4 @@
-/* Estilo do Portfólio */
-/* Define um estilo base para todos os elementos, removendo margens, preenchimentos e incluindo uma caixa de modelagem de borda. 
-   Também define a fonte padrão como 'Poppins' e 'sans-serif'. */
+/* ESTILO GERAL */
 * {
     margin: 0;
     padding: 0;
@@ -8,15 +6,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Estilo do corpo da página */
-/* Define a cor de fundo do corpo como preto e a altura como 100% da altura visível (viewport height). */
 body {
-    background-color: black;
+    background-color: #000;
     height: 100vh;
 }
 
-/* Estilo da interface do portfólio */
-/* Define uma largura máxima para a interface e centraliza-a na página. */
 .interface {
     max-width: 1280px;
     margin: 0 auto;
@@ -26,7 +20,6 @@ body {
     display: flex;
 }
 
-/* Define o estilo do botão de contato, incluindo cor de fundo, borda, tamanho da fonte e cursor. */
 .btn-contato button {
     padding: 10px 40px;
     font-size: 18px;
@@ -48,29 +41,23 @@ h2.titulo span {
     color: #00FF08;
 }
 
-/* Efeito de hover no botão de contato */
-/* Adiciona uma sombra ao botão quando o mouse passa por cima. */
-button:hover, form .btn-enviar input:hover{
-    box-shadow: 0px 0px 8px #00FF08;
+button:hover,
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #00ff08;
     transform: scale(1.05);
 }
 
-/* Estilo do cabeçalho do portfólio */
-/* Define um espaçamento interno para o cabeçalho. */
+/* ESTILO DO CABEÇALHO */
 header {
     padding: 40px 4%;
 }
 
-/* Estilizações específicas dentro da interface do cabeçalho */
-/* Centraliza os elementos dentro do cabeçalho e alinha-os horizontalmente. */
 header>.interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-/* Estilo dos links no cabeçalho */
-/* Define a cor padrão e remove a decoração de texto dos links. */
 header a {
     color: #5c5c5c;
     text-decoration: none;
@@ -78,66 +65,52 @@ header a {
     transition: .2s;
 }
 
-/* Efeito de hover nos links */
-/* Muda a cor e aplica um efeito de escala quando o mouse passa por cima do link. */
-header a:hover {
+header nav.menu-desktop a:hover {
     color: #fff;
     transform: scale(1.05);
 }
 
-/* Estilo da lista de navegação no cabeçalho */
-/* Remove os pontos da lista e exibe os itens da lista em linha. */
 header nav ul {
     list-style-type: none;
 }
 
-/* Estilo dos itens da lista de navegação */
-/* Exibe os itens da lista de navegação em linha e adiciona espaçamento. */
-header nav ul li {
+header nav.menu-desktop ul li {
     display: inline-block;
     padding: 0 40px;
 }
 
-/* Estilo do botão de contato */
-/* Efeito de hover no botão de contato */
-/* Adiciona uma sombra ao botão quando o mouse passa por cima. */
-/* Estilo do Topo Portfólio*/
-section.topo-do-portifolio {
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site {
     padding: 40px 4%;
 }
 
-/* Estilo da seção topo-do-portifolio */
-section.topo-do-portifolio .flex {
+section.topo-do-site .flex {
     align-items: center;
     justify-content: center;
     gap: 90px;
 }
 
-/* Estilo para o título principal */
-.topo-do-portifolio h1 {
+.topo-do-site h1 {
     color: #fff;
     font-size: 42px;
     line-height: 40px;
 }
 
-/* Estilo para a parte destacada do título */
-.topo-do-portifolio h1 span {
+.topo-do-site .txt-topo-site h1 span {
     color: #00FF08;
 }
 
-/* Estilo para os parágrafos na seção topo-do-portifolio */
-.topo-do-portifolio .txt-topo-portifolio p {
+.topo-do-site .txt-topo-site p {
     color: #fff;
     margin: 40px 0;
 }
 
-/* Estilo para a imagem com animação de flutuação */
-.topo-do-portifolio .img-topo-portifolio img {
+.topo-do-site .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
 
-/* Animação de flutuação */
+
 @keyframes flutuar {
     0% {
         top: 0;
@@ -148,18 +121,16 @@ section.topo-do-portifolio .flex {
     }
 }
 
-/* Estilo das especialidades */
-section.especialidades {
-
+/* ESTILO DAS ESPECIALIDADES */
+section.especiliadades {
     padding: 40px 4%;
 }
 
-section.especialidades .flex {
+section.especiliadades .flex {
     gap: 60px;
 }
 
-/* Estilo para as caixas de especialidades */
-.especialidades .especialidades-box {
+.especiliadades .especialidades-box {
     color: #fff;
     padding: 40px;
     border-radius: 20px;
@@ -167,61 +138,52 @@ section.especialidades .flex {
     transition: .2s;
 }
 
-/* Efeito de escala e sombra ao passar o mouse sobre as caixas de especialidades */
-.especialidades .especialidades-box:hover {
+.especiliadades .especialidades-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #ffffff78;
 }
 
-/* Estilo para os ícones dentro das caixas de especialidades */
-.especialidades .especialidades-box i {
+.especiliadades .especialidades-box i {
     font-size: 70px;
     color: #00FF08;
 }
 
-/* Estilo para os títulos das caixas de especialidades */
-.especialidades .especialidades-box h3 {
+.especiliadades .especialidades-box h3 {
     font-size: 28px;
     margin: 15px 0;
 }
 
-/* Estilo da seção sobre */
-section .sobre {
+/* ESTILO DO SOBRE */
+section.sobre {
     padding: 80px 4%;
 }
 
-/* Alinhamento e espaçamento entre elementos flexíveis na seção sobre */
 section.sobre .flex {
     align-items: center;
     gap: 60px;
 }
 
-/* Estilo para o bloco de texto na seção sobre */
 .sobre .txt-sobre {
     color: #fff;
 }
 
-/* Estilo para os títulos h2 na seção sobre */
 .sobre .txt-sobre h2 {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 30px;
 }
 
-/* Estilo para a parte destacada nos títulos h2 */
 .sobre .txt-sobre h2 span {
     color: #00FF08;
     display: block;
 }
 
-/* Estilo para os parágrafos na seção sobre */
 .sobre .txt-sobre p {
     margin: 20px 0;
     text-align: justify;
 }
 
-/* Estilo para os botões sociais na seção sobre */
-.sobre .txt-sobre .btn-social button {
+.btn-social button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -233,21 +195,17 @@ section.sobre .flex {
     transition: .2s;
 }
 
-
-/* ESTILO DO PORTFÓLIO*/
-/* Estiliza a seção do portfólio, definindo espaçamento interno, sombra e margens. */
+/* ESTILO DO PORTFÓLIO */
 section.portfolio {
     padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #ffffff3e;
+    box-shadow: 0 0 40px 10px #ffffff1d;
 }
 
-/* Estiliza os elementos filhos da seção do portfólio usando a classe .flex. */
 section.portfolio .flex {
     justify-content: space-around;
     margin-top: 60px;
 }
 
-/* Estiliza as imagens do portfólio, definindo tamanho, efeitos de transição e borda arredondada. */
 .img-port {
     width: 360px;
     height: 460px;
@@ -259,18 +217,16 @@ section.portfolio .flex {
     position: relative;
 }
 
-/* Efeito de hover nas imagens do portfólio alterando a posição de fundo. */
 .img-port:hover {
     background-position: 100% 100%;
 }
 
-/* Estiliza a sobreposição das imagens do portfólio, configurando posição, tamanho, cores e opacidade. */
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
     width: 100%;
+    height: 100%;
     background-color: #000000b8;
     border-radius: 40px;
     display: flex;
@@ -283,17 +239,15 @@ section.portfolio .flex {
     transition: .5s;
 }
 
-/* Efeito de hover na sobreposição, alterando a opacidade para torná-la visível. */
 .overlay:hover {
     opacity: 1;
 }
 
-/* ESTILO DO FORMULÁRIO DE CONTATO*/
+/* ESTILO DO FORMULÁRIO DE CONTATO */
 section.formulario {
     padding: 80px 4%;
 }
 
-/* Estilo para o formulário */
 form {
     max-width: 500px;
     margin: 0 auto;
@@ -301,10 +255,9 @@ form {
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-    margin-top: 40px; /* Adiciona margem superior ao formulário */
+    margin-top: 40px;
 }
 
-/* Estilo para os campos de input e textarea */
 form input,
 form textarea {
     width: 100%;
@@ -312,29 +265,142 @@ form textarea {
     border: 0;
     outline: 0;
     padding: 20px 15px;
-    border-radius: 15px; /* Adiciona borda arredondada aos campos */
+    border-radius: 15px;
     color: #fff;
     font-size: 18px;
 }
 
-/* Estilo específico para textarea, removendo redimensionamento vertical */
 form textarea {
     resize: none;
     max-height: 200px;
 }
 
-/* Estilo para o bloco de botão enviar */
 form .btn-enviar {
     margin-top: 20px;
     text-align: center;
 }
 
-/* Estilo para o botão de envio */
 form .btn-enviar input {
     width: 120px;
     background-color: #00FF08;
     color: #000;
     font-weight: 700;
     cursor: pointer;
-    transition: .2s; /* Adiciona uma transição suave durante a mudança de estado */
+    transition: .2s;
+}
+
+/* ESTILO DO RODAPÉ */
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #00FF08;
+}
+
+footer .line-footer p i {
+    color: #00FF08;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #fff;
+}
+
+@media screen and (max-width: 1020px) {
+
+    /* CLASSES GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    /* TOPO DO SITE */
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    /* ESPECIALIDADES */
+    section.especiliadades {
+        padding: 40px 8%;
+    }
+
+    /* SOBRE */
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+
+    .img-sobre img {
+        width: 100%;
+    }
+
+    /* PORTFÓLIO */
+    section.portfolio {
+        padding: 80px 8%;
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portfolio .flex {
+        gap: 60px;
+    }
+
+    /* RODAPÉ */
+    footer .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
 }
